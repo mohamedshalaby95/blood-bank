@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -13,6 +14,13 @@ import { DonationProcessComponent } from './donation-process/donation-process.co
 import { SearchComponent } from './search/search.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
+import { DonationProcessDesComponent } from './donation-process-des/donation-process-des.component';
+import { WhatHappenDonatebloodComponent } from './what-happen-donateblood/what-happen-donateblood.component';
+import { FristTimeDonationComponent } from './frist-time-donation/frist-time-donation.component';
+import { SelectTimeTodonationComponent } from './select-time-todonation/select-time-todonation.component';
+
+import{FormsModule} from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -26,11 +34,18 @@ import { LoginComponent } from './login/login.component';
     DonationProcessComponent,
     SearchComponent,
     ProfileComponent,
-    LoginComponent
+    LoginComponent,
+    DonationProcessDesComponent,
+    WhatHappenDonatebloodComponent,
+    FristTimeDonationComponent,
+    SelectTimeTodonationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+  
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
