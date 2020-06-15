@@ -1,6 +1,7 @@
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,8 +19,7 @@ import { WhatHappenDonatebloodComponent } from './what-happen-donateblood/what-h
 import { FristTimeDonationComponent } from './frist-time-donation/frist-time-donation.component';
 import { SelectTimeTodonationComponent } from './select-time-todonation/select-time-todonation.component';
 import { RegistrationComponent } from './registration/registration.component';
-import{FormsModule} from '@angular/forms';
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -37,15 +37,15 @@ import{FormsModule} from '@angular/forms';
     DonationProcessDesComponent,
     WhatHappenDonatebloodComponent,
     FristTimeDonationComponent,
-    SelectTimeTodonationComponent
+    SelectTimeTodonationComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
     FormsModule,
-
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

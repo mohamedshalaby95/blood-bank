@@ -12,23 +12,23 @@ import { WhatHappenDonatebloodComponent } from './what-happen-donateblood/what-h
 import { FristTimeDonationComponent } from './frist-time-donation/frist-time-donation.component';
 import { SelectTimeTodonationComponent } from './select-time-todonation/select-time-todonation.component';
 
-
-const routes: Routes =
- [
-   {path:'',redirectTo:'home',pathMatch:'full'},
-   {path:'home',component: HomeComponent},
-   {path:'about',component:AboutComponent},
-   {path:'contacts',component:ContactsComponent},
-   { path: 'login', component: LoginComponent },
-   { path: 'profile', component: ProfileComponent },
-   { path: 'Register', component: RegistrationComponent },
-   {path:'donation_process',component:DonationProcessComponent},
-   {path:'donation_process_des',component: DonationProcessDesComponent },
-   {path:'what-happen-donateblood',component:WhatHappenDonatebloodComponent},
-   {path:"frist-time-donation",component:FristTimeDonationComponent},
-   {path:'select-time-todonation',component:SelectTimeTodonationComponent}
- ];
-
+const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'contacts', component: ContactsComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'profile', component: ProfileComponent },
+  { path: 'Register', component: RegistrationComponent },
+  { path: 'donation_process', component: DonationProcessComponent },
+  { path: 'donation_process_des', component: DonationProcessDesComponent },
+  {
+    path: 'what-happen-donateblood',
+    component: WhatHappenDonatebloodComponent,
+  },
+  { path: 'frist-time-donation', component: FristTimeDonationComponent },
+  { path: 'select-time-todonation', component: SelectTimeTodonationComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
