@@ -1,4 +1,4 @@
-import { RegistrationComponent } from './registration/registration.component';
+// import { RegistrationComponent } from './registration/registration.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { NgModule } from '@angular/core';
@@ -19,9 +19,10 @@ const routes: Routes =
    {path:'home',component: HomeComponent},
    {path:'about',component:AboutComponent},
    {path:'contacts',component:ContactsComponent},
+   {path:'donation-process',component:DonationProcessComponent},
    { path: 'login', component: LoginComponent },
    { path: 'profile', component: ProfileComponent },
-   { path: 'Register', component: RegistrationComponent },
+   // { path: 'Register', component: RegistrationComponent },
    {path:'donation_process',component:DonationProcessComponent},
    {path:'donation_process_des',component: DonationProcessDesComponent },
    {path:'what-happen-donateblood',component:WhatHappenDonatebloodComponent},
