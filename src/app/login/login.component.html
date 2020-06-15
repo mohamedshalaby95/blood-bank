@@ -1,1 +1,47 @@
-<p>login works!</p>
+<form [formGroup]="signupForm" class="w-50 m-auto py-5" (ngSubmit)="signUp()">
+  <div class="form-group">
+    <label for="">Full Name</label>
+    <input formControlName="full_name" type="text" class="form-control" />
+    <div
+      *ngIf="
+        signupForm.controls.full_name.invalid &&
+        signupForm.controls.full_name.touched
+      "
+      class="alert alert-danger mt-2"
+    >
+      full name not valid
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="">Email</label>
+    <input formControlName="email" type="text" class="form-control" />
+    <div
+      *ngIf="
+        signupForm.controls.email.invalid && signupForm.controls.email.touched
+      "
+      class="alert alert-danger mt-2"
+    >
+      Email not valid
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="">Password</label>
+    <input formControlName="password" type="password" class="form-control" />
+    <div
+      *ngIf="
+        signupForm.controls.password.invalid &&
+        signupForm.controls.password.touched
+      "
+      class="alert alert-danger mt-2"
+    >
+      Password not valid
+    </div>
+  </div>
+  <button
+    [disabled]="signupForm.invalid"
+    type="submit"
+    class="btn btn-primary float-right"
+  >
+    Register
+  </button>
+</form>
