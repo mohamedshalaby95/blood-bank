@@ -1,13 +1,12 @@
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactsComponent } from './contacts/contacts.component';
-
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { DonationProcessComponent } from './donation-process/donation-process.component';
@@ -18,7 +17,7 @@ import { DonationProcessDesComponent } from './donation-process-des/donation-pro
 import { WhatHappenDonatebloodComponent } from './what-happen-donateblood/what-happen-donateblood.component';
 import { FristTimeDonationComponent } from './frist-time-donation/frist-time-donation.component';
 import { SelectTimeTodonationComponent } from './select-time-todonation/select-time-todonation.component';
-
+import { RegistrationComponent } from './registration/registration.component';
 import{FormsModule} from '@angular/forms';
 
 
@@ -28,13 +27,13 @@ import{FormsModule} from '@angular/forms';
     HomeComponent,
     AboutComponent,
     ContactsComponent,
-   
     NavbarComponent,
     FooterComponent,
     DonationProcessComponent,
     SearchComponent,
     ProfileComponent,
     LoginComponent,
+    RegistrationComponent,
     DonationProcessDesComponent,
     WhatHappenDonatebloodComponent,
     FristTimeDonationComponent,
@@ -44,10 +43,10 @@ import{FormsModule} from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-  
-    
+
   ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
