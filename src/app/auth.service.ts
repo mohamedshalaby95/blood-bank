@@ -9,5 +9,7 @@ export class AuthService {
   register(registerData) {
     // h5znha hnaa
     localStorage.setItem('RegisterList', registerData);
+
+    ay kalam ?
   }
 }
